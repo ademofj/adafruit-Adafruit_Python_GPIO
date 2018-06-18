@@ -138,6 +138,7 @@ class Device(object):
         print('read=%x,%x,%x'%(self._address, register, length))
         self._logger.debug("Read the following from register 0x%02X: %s",
                      register, results)
+        print('from register 0x%02X: %s'%(register, results))
         return results
 
     def readRaw8(self):
